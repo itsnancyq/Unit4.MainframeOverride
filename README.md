@@ -64,7 +64,10 @@ feel free to follow the steps below.
     SELECT * FROM emptystack_messages WHERE body ILIKE '%taxi%';
     LidWj | your-boss-99 | triple-cart-38 | Project TAXI | Deploy Project TAXI by end of week. We need this out ASAP.
 7. Get the credentials for the admin account from `emptystack_accounts`.
+   SELECT * FROM emptystack_accounts WHERE username = 'your-boss-99';
+   your-boss-99 | notagaincarter | Skylar     | Singer
 8. Get the ID of the project from `emptystack_projects`.
+   SELECT * FROM emptystack_projects WHERE code = 'TAXI';
 9. Use that information to stop the project: `node mainframe -stop`!
 
 </details>
